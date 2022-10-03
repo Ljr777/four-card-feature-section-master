@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+}
+.grid-col--2 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.v-darkblue-text {
+  color: hsl(234, 12%, 34%);
+}
