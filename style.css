@@ -47,7 +47,6 @@ body {
   box-shadow: 0 0.8rem 0.7rem 0.5rem rgba(76, 78, 97, 0.1);
 }
 .articles {
-  position: relative;
 }
 .icon {
   margin-top: 5rem;
@@ -55,18 +54,20 @@ body {
   align-self: flex-end;
 }
 .supervisor-article {
+  grid-area: supervisor;
+  align-self: center;
   border-top: 0.5rem solid hsl(180, 62%, 55%);
-  margin-top: 5rem;
-  position: absolute;
-  width: auto;
 }
 .team-builder-article {
+  grid-area: team-builder;
   border-top: 0.5rem solid hsl(0, 78%, 62%);
 }
 .karma-article {
-  grid-column: 2 / 3;
+  grid-area: karma;
   border-top: 0.5rem solid hsl(34, 97%, 64%);
 }
 .calculator-article {
+  grid-area: calculator;
+  align-self: center;
   border-top: 0.5rem solid hsl(212, 86%, 64%);
 }
