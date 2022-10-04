@@ -48,6 +48,9 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  max-width: 35rem;
+  max-height: 25rem;
+  height: 22rem;
   /* syntax of box shadow */
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
@@ -77,22 +80,34 @@ body {
   align-self: center;
   border-top: 0.5rem solid hsl(212, 86%, 64%);
 }
-@media (max-width: 23.438em) {
+/* 1200px */
+@media (max-width: 75em) {
   html {
-    font-size: 62.5%;
+    font-size: 56.25%;
   }
+}
+/* 900px */
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+  .description {
+  }
+}
+
+@media (max-width: 46.88em) {
   body {
+    /* sanity check haha */
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     padding: 2rem;
     font-size: 1.8rem;
-    text-align: left;
   }
   .heading-box {
     margin: 5rem 0 3rem 0;
-    width: 100%;
-    text-align: left;
     text-align: center;
+    padding: 1rem;
   }
   .heading-main {
     font-size: 2.85rem;
@@ -103,13 +118,20 @@ body {
   .description {
     font-size: 1.7rem;
     padding-top: 1.5rem;
+    width: 100%;
   }
   .articles {
     display: flex;
     flex-direction: column;
-
+    /* width: 100%; */
     /* need to find a way to still use grid */
     /* grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr); */
+  }
+  .article-design {
+    background-color: hsl(0, 0%, 100%);
+    /* syntax of box shadow */
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
   }
 }
