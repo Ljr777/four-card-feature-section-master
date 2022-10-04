@@ -15,7 +15,7 @@ body {
   padding: 12rem;
 }
 .heading-box {
-  width: 50%;
+  width: 48%;
   text-align: center;
 }
 .heading-main {
@@ -32,7 +32,15 @@ body {
   font-weight: 600;
   color: hsl(234, 12%, 34%);
 }
-
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "supervisor team-builder calculator"
+    "supervisor karma calculator";
+  gap: 4rem;
+}
 .article-design {
   background-color: hsl(0, 0%, 100%);
   width: 100%;
@@ -45,8 +53,6 @@ body {
   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
 
   box-shadow: 0 0.8rem 0.7rem 0.5rem rgba(76, 78, 97, 0.1);
-}
-.articles {
 }
 .icon {
   margin-top: 5rem;
@@ -70,4 +76,37 @@ body {
   grid-area: calculator;
   align-self: center;
   border-top: 0.5rem solid hsl(212, 86%, 64%);
+}
+@media (max-width: 23.438rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .heading-box {
+    margin: 5rem 0 3rem 0;
+    width: 100%;
+    text-align: left;
+    text-align: center;
+  }
+  .heading-main {
+    font-size: 2.85rem;
+  }
+  .heading-secondary {
+    font-size: 2.85rem;
+  }
+  .description {
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+  }
+  .articles {
+    display: flex;
+    flex-direction: column;
+
+    /* need to find a way to still use grid */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); */
+  }
 }

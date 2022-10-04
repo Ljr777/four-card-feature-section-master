@@ -3,18 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-.grid {
-  display: grid;
-}
-.grid-col--3 {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "supervisor team-builder calculator"
-    "supervisor karma calculator";
-  gap: 4rem;
-}
-
 .v-darkblue-text {
   color: hsl(234, 12%, 34%);
 }
