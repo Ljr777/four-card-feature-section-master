@@ -78,6 +78,9 @@ body {
   border-top: 0.5rem solid hsl(212, 86%, 64%);
 }
 @media (max-width: 23.438em) {
+  html {
+    font-size: 62.5%;
+  }
   body {
     display: flex;
     flex-direction: column;
